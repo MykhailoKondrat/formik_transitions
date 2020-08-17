@@ -1,44 +1,55 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import {useDispatch, useSelector} from 'react-redux';
-import {testClick} from './testSlice';
-import Button from '@material-ui/core/Button';
+import React from "react";
+import { Formik, FormikValues } from "formik";
+import * as Yup from "yup";
+import MyForm from "./Components/Form";
+import { InitialValues } from "./interfaces/interfaces";
 
-function App() {
-  interface State {
-    testingSomething: {
-         value: number
-    }
-  }
-  const testState = useSelector( (state:State) => state)
-  const dispatch = useDispatch();
-  const handleClick = () => {
-      dispatch(testClick());
-    console.log(testState);
-  }
+const SignUpForm = () => {
+  const initialValues: InitialValues = {
+    firstName: "",
+    mySelect: "",
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-                className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <Button variant="contained" color="primary">
-          Hello World
-        </Button>
-        <button onClick={handleClick}>Test</button>
-      </header>
-    </div>
+    <Formik
+      initialValues={initialValues}
+      validationSchema={Yup.object({
+        firstName: Yup.string()
+          .min(5, "Must be 5 characters or more")
+          .required("Required"),
+      })}
+      onSubmit={(values: FormikValues) => {
+        alert(JSON.stringify(values, null, 2));
+      }}
+      component={MyForm}
+    />
+
+    // <form onSubmit={formik.handleSubmit}>
+    //   <label htmlFor="firstName">Name</label>
+    //   <input
+    //     id="firstName"
+    //     type="text"
+    //     {...formik.getFieldProps("firstName")}
+    //   />
+    //   {formik.errors.firstName && formik.touched.firstName ? (
+    //     <div>{formik.errors.firstName}</div>
+    //   ) : null}
+    //   <label htmlFor="lastName">Last Name</label>
+    //   <input id="lastName" type="text" {...formik.getFieldProps("lastName")} />
+    //   {formik.errors.lastName && formik.touched.lastName ? (
+    //     <div>{formik.errors.lastName}</div>
+    //   ) : null}
+    //   <label htmlFor="email">Email Address</label>
+    //   <input id="email" type="email" {...formik.getFieldProps("email")} />
+    //   {formik.errors.email && formik.touched.email ? (
+    //     <div>{formik.errors.email}</div>
+    //   ) : null}
+    //   <button type="submit">Submit</button>
+    // </form>
   );
-}
+};
+
+const App: React.FC = () => {
+  return <SignUpForm />;
+};
 
 export default App;

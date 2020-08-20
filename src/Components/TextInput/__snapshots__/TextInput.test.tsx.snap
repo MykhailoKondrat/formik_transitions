@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextInput/> Match Snapshot 1`] = `
+<Fragment>
+  <WithStyles(ForwardRef(TextField))
+    helperText=""
+    label="label"
+    name="name"
+    placeholder="placeholder"
+    type="text"
+  />
+</Fragment>
+`;

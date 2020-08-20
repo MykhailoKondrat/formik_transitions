@@ -1,8 +1,8 @@
 import { useField } from "formik";
 import React from "react";
-import { MySelect } from "../interfaces/interfaces";
+import { MySelect } from "../../interfaces/interfaces";
 
-const MySelectInput: React.FC<MySelect> = ({ label, ...props }: MySelect) => {
+const Select: React.FC<MySelect> = ({ label, ...props }: MySelect) => {
   const [field, meta] = useField(props);
   return (
     <>
@@ -12,4 +12,4 @@ const MySelectInput: React.FC<MySelect> = ({ label, ...props }: MySelect) => {
     </>
   );
 };
-export default MySelectInput;
+export default Select;

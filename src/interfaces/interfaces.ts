@@ -1,4 +1,10 @@
-export interface MyInput {
+import { FieldInputProps, FieldMetaProps } from "formik";
+
+interface InputMeta {
+  field?: FieldInputProps<string | undefined>;
+  meta?: FieldMetaProps<string | undefined>;
+}
+export interface MyInput extends InputMeta {
   id?: string;
   placeholder: string;
   name: string;

@@ -39,6 +39,5 @@ describe("<TextInput/>", () => {
         />
       )
     ).toMatchSnapshot();
-    expect(true).toBe(true);
   });
 });

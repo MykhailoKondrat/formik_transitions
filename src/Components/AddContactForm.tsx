@@ -1,17 +1,20 @@
-import { Form, FormikProps } from "formik";
+import { Field, Form, FormikProps } from "formik";
 import TextInput from "./TextInput/TextInput";
-import Select from "./Select/Select";
 import { InitialValues } from "../interfaces/interfaces";
 import React from "react";
 import { Grid } from "@material-ui/core";
+import RadioGroupInput from "./RadioGroupInput/RadioGroupInput";
+import Checkboxes from "./Checkboxes/Checkboxes";
 
-const MyForm: React.FC<FormikProps<InitialValues>> = ({
+const AddContactForm: React.FC<FormikProps<InitialValues>> = ({
   isValid,
   dirty,
   errors,
   touched,
   getFieldProps,
   getFieldMeta,
+  values,
+  ...props
 }: FormikProps<InitialValues>) => {
   const inputNames = {
     firstName: "firstName",
@@ -29,7 +32,6 @@ const MyForm: React.FC<FormikProps<InitialValues>> = ({
     workHours: "workHours",
     subscribtion: "subscribtion",
   };
-
   return (
     <Form>
       <Grid
@@ -47,23 +49,25 @@ const MyForm: React.FC<FormikProps<InitialValues>> = ({
           field={getFieldProps(inputNames.firstName)}
           meta={getFieldMeta(inputNames.firstName)}
         />
+        <RadioGroupInput
+          label="Work Type"
+          name="workType"
+          options={["Office", "Remote", "Freelance"]}
+          field={getFieldProps(inputNames.workType)}
+          meta={getFieldMeta(inputNames.workType)}
+        />
 
-        {!errors.firstName && touched.firstName && (
-          <Select name="mySelect" label="My Select">
-            <option value="">select</option>
-            <option value="test11">11</option>
-            <option value="test12">12</option>
-          </Select>
-        )}
-        <button
-          type="submit"
-          disabled={!(isValid && dirty && touched.mySelect)}
-        >
-          Submit
-        </button>
+        <Checkboxes
+          label="Checkboxes"
+          name="checked"
+          options={["Office", "Remote", "Freelance"]}
+          field={getFieldProps("checked")}
+          meta={getFieldMeta("checked")}
+        />
+        <button type="submit">Submit</button>
       </Grid>
     </Form>
   );
 };
 
-export default MyForm;
+export default AddContactForm;

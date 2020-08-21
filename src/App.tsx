@@ -1,10 +1,10 @@
 import React from "react";
-import AddContactForm from "./Containers/AddContactForm/AddContactForm";
+import AddContact from "./Containers/AddContact/AddContact";
 import ContactsHOC from "./hoc/ContactsHOC/ContactsHOC";
 const App: React.FC = () => {
   return (
     <ContactsHOC>
-      <AddContactForm />
+      <AddContact />
     </ContactsHOC>
   );
 };

@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6abb96a-e186-49b3-bae0-59a8329c20e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/SelectInput/SelectInput.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/DoubleSliderWithInputs/DoubleSliderWithInputs.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/AddContactForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AddContactForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Checkboxes/Checkboxes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Checkboxes/Checkboxes.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/RadioGroupInput/RadioGroupInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/RadioGroupInput/RadioGroupInput.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Select/Select.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/SelectInput/SelectInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SelectInput/SelectInput.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Containers/AddContact/AddContact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/AddContact/AddContact.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/interfaces/interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/interfaces.ts" afterDir="false" />
     </list>
@@ -194,7 +193,7 @@
       <workItem from="1597995478089" duration="15900000" />
       <workItem from="1598166660992" duration="2189000" />
       <workItem from="1598346484901" duration="42000" />
-      <workItem from="1598449163269" duration="1200000" />
+      <workItem from="1598449163269" duration="6373000" />
     </task>
     <servers />
   </component>
@@ -319,11 +318,11 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="516" y="367" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900/-1366.0.1366.1024@0.0.1440.900" timestamp="1597938248367" />
-    <state width="600" height="440" key="javadoc.popup" timestamp="1598018011286">
+    <state width="600" height="440" key="javadoc.popup" timestamp="1598453434379">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="600" height="440" key="javadoc.popup/0.0.1440.900/-1366.0.1366.1024@0.0.1440.900" timestamp="1598018011286" />
-    <state width="600" height="440" key="javadoc.popup/0.0.1440.900@0.0.1440.900" timestamp="1597937164259" />
+    <state width="600" height="440" key="javadoc.popup/0.0.1440.900@0.0.1440.900" timestamp="1598453434379" />
     <state x="383" y="194" width="672" height="678" key="search.everywhere.popup" timestamp="1597416881126">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

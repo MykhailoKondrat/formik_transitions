@@ -16,7 +16,6 @@ const Checkboxes: React.FC<ICheckboxes> = ({
   field,
   meta,
 }: ICheckboxes & { children?: React.ReactNode }) => {
-  console.log(field?.value);
   return (
     <FormControl error={meta?.touched && meta.error ? true : undefined}>
       <FormLabel component="legend">{label}</FormLabel>

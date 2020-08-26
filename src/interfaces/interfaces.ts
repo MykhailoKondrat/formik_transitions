@@ -5,6 +5,11 @@ interface InputMeta {
   field?: FieldInputProps<string | undefined>;
   meta?: FieldMetaProps<string | undefined>;
 }
+interface SliderMeta {
+  field?: FieldInputProps<number | number[] | undefined>;
+  meta?: FieldMetaProps<string | undefined>;
+}
+
 export interface TwoOrMoreArray<T> extends Array<T> {
   0: T;
   1: T;
@@ -29,9 +34,17 @@ export interface MySelect extends InputMeta, MinimumRequiredInputProps {
   options: TwoOrMoreArray<string>;
 }
 
+export interface DoubleSlider extends SliderMeta, MinimumRequiredInputProps {
+  options: {
+    min: number;
+    max: number;
+  };
+}
+
 export interface InitialValues {
   firstName: string | undefined;
   workType: string | undefined;
   checked: Array<string>;
-  Select: string | number;
+  select: string | number;
+  doubleSlider: number[];
 }

@@ -4,13 +4,13 @@ import * as Yup from "yup";
 import React from "react";
 import { Grid } from "@material-ui/core";
 import AddContactForm from "../../Components/AddContactForm";
-
 const AddContact: React.FC = () => {
   const initialValues: InitialValues = {
     firstName: "",
     workType: "",
     checked: [],
-    Select: "",
+    select: "",
+    doubleSlider: [0, 100],
   };
   return (
     <Grid container={true} direction="column">
@@ -23,6 +23,7 @@ const AddContact: React.FC = () => {
           workType: Yup.string().required("Required"),
           checked: Yup.array().required("Required"),
           Select: Yup.string(),
+          doubleSlider: Yup.array().required("Required"),
         })}
         onSubmit={(values: FormikValues) => {
           alert(JSON.stringify(values, null, 2));

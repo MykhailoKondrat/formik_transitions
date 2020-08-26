@@ -20,7 +20,7 @@ const SelectInput: React.FC<MySelect> = ({
         <FormLabel component="legend">{label}</FormLabel>
         <Select name={name} {...field}>
           {options.map((option) => (
-            <MenuItem key={option} value={option.toString()}>
+            <MenuItem key={option} value={option}>
               {option}
             </MenuItem>
           ))}

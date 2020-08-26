@@ -6,6 +6,7 @@ import { Grid } from "@material-ui/core";
 import RadioGroupInput from "./RadioGroupInput/RadioGroupInput";
 import Checkboxes from "./Checkboxes/Checkboxes";
 import SelectInput from "./SelectInput/SelectInput";
+import DoubleSliderWithInputs from "./DoubleSliderWithInputs/DoubleSliderWithInputs";
 
 const AddContactForm: React.FC<FormikProps<InitialValues>> = ({
   getFieldProps,
@@ -65,6 +66,13 @@ const AddContactForm: React.FC<FormikProps<InitialValues>> = ({
           options={["1", "2"]}
           field={getFieldProps("Select")}
           meta={getFieldMeta("Select")}
+        />
+        <DoubleSliderWithInputs
+          name="doubleSlider"
+          label="doubleSlider"
+          options={{ min: 10, max: 120 }}
+          field={getFieldProps("doubleSlider")}
+          meta={getFieldMeta("doubleSlider")}
         />
         <button type="submit">Submit</button>
       </Grid>

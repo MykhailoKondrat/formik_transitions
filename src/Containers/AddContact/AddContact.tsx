@@ -10,6 +10,7 @@ const AddContact: React.FC = () => {
     firstName: "",
     workType: "",
     checked: [],
+    Select: "",
   };
   return (
     <Grid container={true} direction="column">
@@ -20,7 +21,8 @@ const AddContact: React.FC = () => {
             .min(5, "Must be 5 characters or more")
             .required("Required"),
           workType: Yup.string().required("Required"),
-          checked: Yup.array().required("asd"),
+          checked: Yup.array().required("Required"),
+          Select: Yup.string(),
         })}
         onSubmit={(values: FormikValues) => {
           alert(JSON.stringify(values, null, 2));

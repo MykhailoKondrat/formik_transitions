@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6abb96a-e186-49b3-bae0-59a8329c20e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/Checkboxes/Checkboxes.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/RadioGroupInput/RadioGroupInput.test.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/RadioGroupInput/RadioGroupInput.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Containers/AddContact/AddContact.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/SelectInput/SelectInput.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AddContactForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/TextInput/TextInput.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/TextInput/TextInput.test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/TextInput/TextInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/TextInput/TextInput.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/TextInput/__snapshots__/TextInput.test.tsx.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/TextInput/__snapshots__/TextInput.test.tsx.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/AddContactForm/AddContactForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/AddContact/AddContact.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/AddContactForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AddContactForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Checkboxes/Checkboxes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Checkboxes/Checkboxes.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/RadioGroupInput/RadioGroupInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/RadioGroupInput/RadioGroupInput.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Select/Select.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Containers/AddContact/AddContact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/AddContact/AddContact.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/interfaces/interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/interfaces.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -195,7 +191,10 @@
       <workItem from="1596555929273" duration="4685000" />
       <workItem from="1597394333311" duration="4229000" />
       <workItem from="1597417157129" duration="41357000" />
-      <workItem from="1597995478089" duration="15076000" />
+      <workItem from="1597995478089" duration="15900000" />
+      <workItem from="1598166660992" duration="2189000" />
+      <workItem from="1598346484901" duration="42000" />
+      <workItem from="1598449163269" duration="1200000" />
     </task>
     <servers />
   </component>
@@ -226,29 +225,29 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1597495938519" />
-    <state width="1419" height="388" key="GridCell.Tab.0.bottom" timestamp="1598019109063">
+    <state width="1419" height="352" key="GridCell.Tab.0.bottom" timestamp="1598027403053">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1419" height="388" key="GridCell.Tab.0.bottom/0.0.1440.900/-1366.0.1366.1024@0.0.1440.900" timestamp="1598019109063" />
-    <state width="1419" height="319" key="GridCell.Tab.0.bottom/0.0.1440.900/-1366.23.1366.1001@0.0.1440.900" timestamp="1597940612163" />
+    <state width="1419" height="352" key="GridCell.Tab.0.bottom/0.0.1440.900/-1366.23.1366.1001@0.0.1440.900" timestamp="1598027403053" />
     <state width="1419" height="298" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1597937196883" />
-    <state width="1419" height="388" key="GridCell.Tab.0.center" timestamp="1598019109061">
+    <state width="1419" height="352" key="GridCell.Tab.0.center" timestamp="1598027403051">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1419" height="388" key="GridCell.Tab.0.center/0.0.1440.900/-1366.0.1366.1024@0.0.1440.900" timestamp="1598019109061" />
-    <state width="1419" height="319" key="GridCell.Tab.0.center/0.0.1440.900/-1366.23.1366.1001@0.0.1440.900" timestamp="1597940612161" />
+    <state width="1419" height="352" key="GridCell.Tab.0.center/0.0.1440.900/-1366.23.1366.1001@0.0.1440.900" timestamp="1598027403051" />
     <state width="1419" height="298" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1597937196881" />
-    <state width="1419" height="388" key="GridCell.Tab.0.left" timestamp="1598019109059">
+    <state width="1419" height="352" key="GridCell.Tab.0.left" timestamp="1598027403050">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1419" height="388" key="GridCell.Tab.0.left/0.0.1440.900/-1366.0.1366.1024@0.0.1440.900" timestamp="1598019109059" />
-    <state width="1419" height="319" key="GridCell.Tab.0.left/0.0.1440.900/-1366.23.1366.1001@0.0.1440.900" timestamp="1597940612160" />
+    <state width="1419" height="352" key="GridCell.Tab.0.left/0.0.1440.900/-1366.23.1366.1001@0.0.1440.900" timestamp="1598027403050" />
     <state width="1419" height="298" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1597937196879" />
-    <state width="1419" height="388" key="GridCell.Tab.0.right" timestamp="1598019109062">
+    <state width="1419" height="352" key="GridCell.Tab.0.right" timestamp="1598027403052">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1419" height="388" key="GridCell.Tab.0.right/0.0.1440.900/-1366.0.1366.1024@0.0.1440.900" timestamp="1598019109062" />
-    <state width="1419" height="319" key="GridCell.Tab.0.right/0.0.1440.900/-1366.23.1366.1001@0.0.1440.900" timestamp="1597940612162" />
+    <state width="1419" height="352" key="GridCell.Tab.0.right/0.0.1440.900/-1366.23.1366.1001@0.0.1440.900" timestamp="1598027403052" />
     <state width="1419" height="298" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1597937196882" />
     <state width="1419" height="298" key="GridCell.Tab.1.bottom" timestamp="1597940610102">
       <screen x="0" y="0" width="1440" height="900" />

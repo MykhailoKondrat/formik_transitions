@@ -1,20 +1,15 @@
-import { Field, Form, FormikProps } from "formik";
+import { Form, FormikProps } from "formik";
 import TextInput from "./TextInput/TextInput";
 import { InitialValues } from "../interfaces/interfaces";
 import React from "react";
 import { Grid } from "@material-ui/core";
 import RadioGroupInput from "./RadioGroupInput/RadioGroupInput";
 import Checkboxes from "./Checkboxes/Checkboxes";
+import SelectInput from "./SelectInput/SelectInput";
 
 const AddContactForm: React.FC<FormikProps<InitialValues>> = ({
-  isValid,
-  dirty,
-  errors,
-  touched,
   getFieldProps,
   getFieldMeta,
-  values,
-  ...props
 }: FormikProps<InitialValues>) => {
   const inputNames = {
     firstName: "firstName",
@@ -30,7 +25,7 @@ const AddContactForm: React.FC<FormikProps<InitialValues>> = ({
       manager: {},
     },
     workHours: "workHours",
-    subscribtion: "subscribtion",
+    subscription: "subscription",
   };
   return (
     <Form>
@@ -63,6 +58,13 @@ const AddContactForm: React.FC<FormikProps<InitialValues>> = ({
           options={["Office", "Remote", "Freelance"]}
           field={getFieldProps("checked")}
           meta={getFieldMeta("checked")}
+        />
+        <SelectInput
+          name="Select"
+          label="Select"
+          options={["1", "2"]}
+          field={getFieldProps("Select")}
+          meta={getFieldMeta("Select")}
         />
         <button type="submit">Submit</button>
       </Grid>
